@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+/* Globals */
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: #E6EFF6;
+    color: #fff;
+}
+
+/*  */
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.container{
+    max-width: 650px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    /* text-align: left; */
+}
+.item{
+    padding: 40px;
+
+    flex-grow: 1;
+}
+.join{
+    flex-basis: 100%;
+    background-color: #fff;
+}
+
+.subscription{
+    flex-basis: 50%;
+    background-color: #2BB3B1;
+}
+
+.whyus{
+    flex-basis: 50%;
+    background-color: #4ABEBD;
+}
+
+/* Box 1 */
+.join h1{
+    color: var(--cyan);
+}
+.join h4{
+    color: var(--bright-yellow);
+    margin: 20px 0 15px 0;
+}
+
+.join p{
+    color: var(--grayish-blue);
+    line-height: 30px;
+}
+
+/* Box 2 */
+
+.subscription-price{
+    margin: 15px 0 10px 0;
+    display: inline-flex;
+    align-items: center;
+    /* color: var(--light-gray); */
+    color: rgba(255, 255, 255, 0.5);
+}
+.subscription-price span{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+}
+
+.subscription-text{
+    /* font-size: 15px; */
+}
+
+button{
+    border: none;
+    background-color: var(--bright-yellow);
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Box 3 */
+
+.whyus p{
+ margin-top: 20px;
+ padding-right: 40px;
+ font-size: 14px;
+ line-height: 25px;
+ text-align: left; 
+}
